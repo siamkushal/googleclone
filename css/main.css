@@ -1,4 +1,8 @@
-
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 a {
     text-decoration: none;
 }
@@ -13,25 +17,42 @@ ul {
 }
 ul li {
     display: inline-block;
-    padding: 0 10px;
 }
-ul.right {
+.footer1 ul.right {
     float: right;
 }
 
 body {
     font-family:'Arial';
     font-size: 13px;
+    position: relative;
+    min-height: calc(100vh - 4px);
 }
 .menu {
     text-align: right;
     padding: 0px 10px;
-    border: 1px solid red;
+    min-height: 70px;
+    overflow: hidden;
 }
 .menu a {
     color: black;
     margin: auto;
     padding: 0;
+}
+.mr-10 {
+    margin-right: 10px;
+}
+.ml-10 {
+    margin-left: 10px
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mb-10 {
+    margin-bottom: 10px;
+}
+.ma-10 {
+    margin: 10px;
 }
 .imgApp {
     height: 30px;
@@ -48,19 +69,24 @@ body {
 }
 
 .gCenter {
-    border: 1px solid black;
+    /* border: 1px solid black; */
     text-align: center;
 }
 
 .logo {
     margin-top: 70px;
-    border: 1px solid blue;
+    height: 92px;
+    width: 250px;
+    object-fit: cover;
+
+    /* border: 1px solid blue; */
 }
 
-input[type=text] {
-    width: 50%;
-    padding: 15px 10px;
+.search-box {
+    width: 584px;
+    padding: 10px 10px;
     margin: 0px 0px;
+    height: 52px;
     border: 1px solid rgb(206, 206, 206);
     border-radius: 35px;
     box-sizing: border-box;
@@ -68,8 +94,7 @@ input[type=text] {
     font-weight: bold;
 }
 input[type=text]:hover {
-    transform: scale(1.01);
-    box-shadow: 3px 3px 10px rgb(206, 206, 206);
+    box-shadow: 0px 2px 8px rgba(206, 206, 206, .28);
 }
 
 .button {
@@ -87,14 +112,20 @@ input[type=text]:hover {
     border: 1px solid rgb(206, 206, 206)
 }
 .footer {
-    vertical-align: bottom;
-    
+    position: absolute;
+    width: calc(100% - 4px);
+    bottom: 0;
+    left: 0;
 }
 .footer1 {
     width: 100%;
+    padding: 16px;
     background-color: rgb(241, 241, 241);
     border: 1px solid rgb(206, 206, 206);
     color: rgb(105, 104, 104);
+}
+.footer1 ul li {
+    margin-right: 20px;
 }
 .footer1 a {
     color: rgb(105, 104, 104);
