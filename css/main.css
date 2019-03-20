@@ -1,0 +1,102 @@
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+ul {
+    display: inline-block;
+    list-style-type: none;
+    padding: 0;
+}
+ul li {
+    display: inline-block;
+    padding: 0 10px;
+}
+ul.right {
+    float: right;
+}
+
+body {
+    font-family:'Arial';
+    font-size: 13px;
+}
+.menu {
+    text-align: right;
+    padding: 0px 10px;
+    border: 1px solid red;
+}
+.menu a {
+    color: black;
+    margin: auto;
+    padding: 0;
+}
+.imgApp {
+    height: 30px;
+    width: 30px;
+    position: relative;
+    top: 10px;
+}
+.imgUser {
+    border-radius: 50%;
+    height: 45px;
+    width: 45px;
+    position: relative;
+    top: 17px;
+}
+
+.gCenter {
+    border: 1px solid black;
+    text-align: center;
+}
+
+.logo {
+    margin-top: 70px;
+    border: 1px solid blue;
+}
+
+input[type=text] {
+    width: 50%;
+    padding: 15px 10px;
+    margin: 0px 0px;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 35px;
+    box-sizing: border-box;
+    font-size: 20px;
+    font-weight: bold;
+}
+input[type=text]:hover {
+    transform: scale(1.01);
+    box-shadow: 3px 3px 10px rgb(206, 206, 206);
+}
+
+.button {
+    background-color: rgb(241, 241, 241);
+    border-radius: 10px;
+    border-style: none;
+    color: rgb(105, 104, 104);
+    padding: 10px 25px;
+    margin: 30px 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.button:hover {
+    color: black;
+    border: 1px solid rgb(206, 206, 206)
+}
+.footer {
+    vertical-align: bottom;
+    
+}
+.footer1 {
+    width: 100%;
+    background-color: rgb(241, 241, 241);
+    border: 1px solid rgb(206, 206, 206);
+    color: rgb(105, 104, 104);
+}
+.footer1 a {
+    color: rgb(105, 104, 104);
+}
+
